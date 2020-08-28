@@ -1,0 +1,126 @@
+// main: ../style.less
+
+.intro {
+    height: 100vh;
+    background: url("../img/intro-bg.jpg") no-repeat;
+    background: url("../img/intro-bg.webp") no-repeat;
+    background-size: cover;
+
+    &--digital {
+        background: url("../img/intro2-bg.jpg") no-repeat;
+        background: url("../img/intro2-bg.webp") no-repeat;
+        background-size: cover;
+    }
+
+    &--outdoor {
+        background: url("../img/intro3-bg.jpg") no-repeat;
+        background: url("../img/intro3-bg.webp") no-repeat;
+        background-size: cover;
+    }
+
+    &--print {
+        background: url("../img/intro4-bg.jpg") no-repeat;
+        background: url("../img/intro4-bg.webp") no-repeat;
+        background-size: cover;
+    }
+}
+
+.intro__inner {
+    height: 100%;
+    position: relative;
+}
+
+.intro__content {
+    padding-bottom: 16rem;
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.intro__title {
+    color: @white;
+    font-family: 'Gilroy Bold';
+    font-size: 9.8rem;
+    line-height: 10.3rem;
+
+    &--outdoor {
+        color: @comet;
+    }
+}
+
+.intro__subtitle {
+    color: @white;
+    font-family: 'Gilroy Bold';
+    font-size: 6.4rem;
+    margin-top: 1.5rem;
+}
+
+.intro__text {
+    max-width: 470px;
+    margin-left: auto;
+    color: @white;
+    font-family: 'Gilroy Regular';
+    font-size: 1.8rem;
+    line-height: 30px;
+    margin-top: 5rem;
+
+    &--outdoor {
+        color: @comet;
+    }
+}
+
+.intro__btn-inner {
+    margin-top: 9rem;
+}
+
+.intro__counter {
+    -webkit-text-stroke: 1px @white;
+    color: transparent;
+    font-family: 'Montserat medium';
+    font-size: 16.9rem;
+    line-height: 3rem;
+    position: absolute;
+    bottom: 100px;
+    left: 200px;
+    z-index: 2000;
+}
+
+// intro__slider
+.intro__slider .slick-list {
+    overflow: hidden;
+}
+ 
+.intro__slider .slick-track {
+    display: flex;
+}
+
+.intro__slider {
+    position: relative;
+    z-index: 1;
+}
+
+.slick-dots {
+    display: flex;
+    color: @gainsboro;
+    position: absolute;
+    left: 45%;
+    bottom: 70px;
+    z-index: 1000;
+}
+
+.slick-dots li {
+    list-style-type: disc;
+    margin-right: 40px;
+    font-size: 45px;
+    cursor: pointer; 
+}
+
+.slick-dots li.slick-active {
+    color: @seance;
+}
+
+.slick-dots li button {
+    font-size: 0;
+}
