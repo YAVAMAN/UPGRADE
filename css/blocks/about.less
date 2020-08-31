@@ -1,0 +1,52 @@
+// main: ../style.less
+
+.about {
+    background: url("../img/about-bg.png") no-repeat;
+    background-position: top 80px right -290px;
+}
+
+.about__inner {
+    position: relative;
+    padding: 29rem 0 78.5rem;
+}
+
+.about__title {
+    color: @black;
+    font-family: 'Gilroy SemiBold';
+    font-size: 8rem;
+    margin-bottom: 14.5rem;
+}
+
+.about__text {
+    width: 100%;
+    max-width: 600px;
+    color: @comet;
+    font-family: 'Gilroy Medium';
+    font-size: 1.8rem;
+    line-height: 3rem;
+
+    & span {
+        font-family: 'Gilroy Bold';
+    }
+}
+
+.about__megaphone, .about__lineChart, .about__pieChart {
+    position: absolute;
+}
+
+.about__megaphone {
+    top: 270px;
+    right: -55px;
+}
+
+.about__lineChart {
+    top: 883px;
+    left: 0;
+    box-shadow: 0px 30px 40px @midnightExpress;
+}
+
+.about__pieChart {
+    top: 1072px;
+    left: 730px;
+    box-shadow: 0px 30px 40px @midnightExpress;
+}

@@ -1,21 +1,23 @@
+// Intro slider
 $('.intro__slider').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    infinite: true,
-    autoplay: true,
-    arrows: false,
-    dots: true,
-    pauseOnFocus: true,
-    pauseOnHover: false,
-    autoplaySpeed: 9000,
+   slidesToShow: 1,
+   slidesToScroll: 1,
+   infinite: true,
+   autoplay: true,
+   arrows: false,
+   dots: true,
+   pauseOnFocus: true,
+   pauseOnHover: false,
+   autoplaySpeed: 5000,
  });
 
- $(".intro__slider").on('beforeChange', function(event, slick, currentSlide, nextSlide){
-    $("#cp").text("0" + (nextSlide + 1) + "/");
-    $(".header__inner").toggleClass( "white" );
- });
+$(".intro__slider").on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+   $("#cp").text("0" + (nextSlide + 1) + "/");
+   $('.header__inner').toggleClass('text-white');
+});
 
 
+// Form
 const btns = document.querySelectorAll('.btn');
 let formBg1 = document.querySelector('.form__bg1');
 let formBg2 = document.querySelector('.form__bg2');
@@ -34,4 +36,3 @@ function showForm(event) {
 for (let i = 0; i < btns.length; i++) {
    btns[i].addEventListener('click', showForm)
 };
- 
