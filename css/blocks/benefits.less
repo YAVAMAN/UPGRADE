@@ -3,18 +3,46 @@
 .benefits {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 20rem;
+    @media (max-width: 1540px) {
+        padding-bottom: 0;
+    }
+    @media (max-width: 648px) {
+        width: 100%;
+        padding-top: 15rem;
+    }
+    @media (max-width: 420px) {
+        padding-top: 8.4rem;
+    }
 }
 
 .benefits__item {
     width: calc(100% / 3);
     max-width: 328px;
+    @media (max-width: 1540px) {
+        max-width: 255px;
+    }
+    @media (max-width: 1020px) {
+        max-width: 205px;
+    }
+    @media (max-width: 648px) {
+        width: 100%;
+        max-width: 410px;
+    }
 }
 
 .benefits__icon {
-    margin-bottom: 40px;
-
-    &--margin {
-        margin-bottom: 55px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 4rem;
+    @media (max-width: 1540px) {
+        width: 140px;
+        margin-bottom: 3rem;
+    }
+    @media (max-width: 648px) {
+        margin: 0 auto;
+        margin-bottom: 2.3rem;
     }
 }
 
@@ -22,12 +50,51 @@
     color: @black;
     font-family: 'Gilroy Bold';
     font-size: 3.8rem;
-    margin-bottom: 30px;
+    line-height: 1.2;
+    margin-bottom: 3rem;
+    @media (max-width: 1540px) {
+        font-size: 2rem;
+        line-height: 1.2;
+        margin-bottom: 3rem;
+    }
+    @media (max-width: 1020px) {
+        & span {
+            display: block;
+        }
+    }
+    @media (max-width: 648px) {
+        text-align: center;
+        margin-bottom: 1.5rem;
+        & span {
+            display: inline-block;
+        }
+    }
 }
 
 .benefits__text {
     color: @comet;
     font-family: 'Gilroy Medium';
     font-size: 1.8rem;
-    line-height: 30px;
+    line-height: 1.67;
+    @media (max-width: 1540px) {
+        font-size: 1.4rem;
+        line-height: 1.86;
+    }
+    @media (max-width: 648px) {
+        text-align: center;
+    }
+}
+
+// intro__slider
+.benefits__slider .slick-list {
+    overflow: hidden;
+}
+ 
+.benefits__slider .slick-track {
+    display: flex;
+}
+
+.benefits__slider {
+    position: relative;
+    z-index: 1;
 }

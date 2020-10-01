@@ -1,45 +1,120 @@
 // main: ../style.less
 
-.adv__inner {
+.advantages {
+    overflow: hidden;
+}
+
+.advantages__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16rem 0 20rem;
+    padding: 0 0 20rem;
+    @media (max-width: 1540px) {
+        padding: 0 0 10rem;
+    }
+    @media (max-width: 648px) {
+        position: relative;
+        padding: 0;
+    }
 }
 
-.adv__pic {
+.advantages__pic {
+    display: block;
+    max-width: 100%;
+    height: auto;
     box-shadow: 0 30px 40px rgba(0, 1, 56, 0.1);
     border-radius: 1rem;
+    @media (max-width: 1540px) {
+        width: 424px;
+    }
+    @media (max-width: 1020px) {
+        position: absolute;
+        left: -280px;
+        z-index: -1;
+    }
+    @media (max-width: 648px) {
+        bottom: 0;
+        right: -280px;
+        left: unset;
+    }
+    @media (max-width: 420px) {
+        width: 280px;
+        bottom: -8rem;
+        right: -240px;
+        left: unset;
+    }
 }
 
-.adv__content {
+.advantages__content {
     width: 100%;
     max-width: 640px;
-    // padding-left: 4.8rem;
+    @media (max-width: 1540px) {
+        max-width: 52rem;
+    }
+    @media (max-width: 1020px) {
+        margin-left: auto;
+    }
+    @media (max-width: 648px) {
+        max-width: 410px;
+        margin: 0 auto;
+    }
 }
 
-.adv__suptitle {
+.advantages__suptitle {
     color: @comet;
     font-family: 'Gilroy SemiBold';
     font-size: 1.8rem;
     margin-bottom: 2rem;
-
     & img {
         margin: 0 0.7rem -0.4rem 0;
     }
+    @media (max-width: 1540px) {
+        font-size: 1.6rem;
+        margin-bottom: 1.4rem;
+    }
 }
 
-.adv__title {
+.advantages__title {
     color: @black;
     font-family: 'Gilroy SemiBold';
     font-size: 8rem;
-    line-height: 9rem;
+    line-height: 1.19;
     margin-bottom: 8rem;
+    @media (max-width: 1540px) {
+        font-size: 6.5rem;
+        margin-bottom: 2.2rem;
+    }
+    @media (max-width: 648px) {
+        font-size: 5.6rem;
+        margin-bottom: 5rem;
+        & span {
+            display: none;
+        }
+    }
+    @media (max-width: 420px) {
+        font-size: 3.84rem;
+        margin-bottom: 7rem;
+    }
 }
 
-.adv__text {
+.advantages__text {
     color: @comet;
     font-family: 'Gilroy Medium';
     font-size: 1.8rem;
-    line-height: 30px;
+    line-height: 1.67;
+    @media (max-width: 1540px) {
+        font-size: 1.6rem;
+        line-height: 1.63;
+    }
+    @media (max-width: 648px) {
+        width: 100%;
+        max-width: 285px;
+        font-size: 1.8rem;
+        line-height: 1.67;
+    }
+    @media (max-width: 420px) {
+        max-width: 225px;
+        font-size: 1.6rem;
+        line-height: 1.63;
+    }
 }

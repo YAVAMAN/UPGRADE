@@ -1,13 +1,46 @@
 // main: ../style.less
 
 .about {
-    background: url("../img/about-bg.png") no-repeat;
-    background-position: top 80px right -290px;
+    overflow: hidden;
 }
-
 .about__inner {
     position: relative;
-    padding: 29rem 0 78.5rem;
+    padding: 29rem 0 94.5rem;
+    @media (max-width: 1540px) {
+        padding: 19.6rem 0 63.6rem;
+    }
+    @media (max-width: 1020px) {
+        padding: 15.4rem 0 50rem;
+    }
+    @media (max-width: 648px) {
+        padding: 10.9rem 0 45rem;
+    }
+    @media (max-width: 420px) {
+        padding: 10.1rem 0 45rem;
+    }
+}
+
+.about__bg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    top: 7rem;
+    right: -61rem;
+    z-index: -2;
+    @media (max-width: 1020px) {
+        top: 10rem;
+        right: -34rem;
+    }
+    @media (max-width: 648px) {
+        top: 35rem;
+        right: -25rem;
+    }
+    @media (max-width: 420px) {
+        max-width: 785px;
+        top: 18rem;
+        right: -54rem;
+    }
 }
 
 .about__title {
@@ -15,6 +48,18 @@
     font-family: 'Gilroy SemiBold';
     font-size: 8rem;
     margin-bottom: 14.5rem;
+    @media (max-width: 1540px) {
+        font-size: 6.5rem;
+        margin-bottom: 7.9rem;
+    }
+    @media (max-width: 648px) {
+        font-size: 5.9rem;
+        margin-bottom: 5rem;
+    }
+    @media (max-width: 420px) {
+        font-size: 4.5rem;
+        margin-bottom: 5rem;
+    }
 }
 
 .about__text {
@@ -23,30 +68,94 @@
     color: @comet;
     font-family: 'Gilroy Medium';
     font-size: 1.8rem;
-    line-height: 3rem;
-
+    line-height: 1.67;
     & span {
         font-family: 'Gilroy Bold';
+    }
+    @media (max-width: 1540px) {
+        max-width: 490px;
+        font-size: 1.6rem;
+        line-height: 1.63;
+    }
+    @media (max-width: 1020px) {
+        max-width: 371px;
+    }
+    @media (max-width: 648px) {
+        max-width: 410px;
+        font-family: 'Gilroy Regular';
+        font-size: 1.8rem;
+    }
+    @media (max-width: 648px) {
+        font-size: 1.6rem;
     }
 }
 
 .about__megaphone, .about__lineChart, .about__pieChart {
     position: absolute;
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .about__megaphone {
-    top: 270px;
-    right: -55px;
+    top: 50rem;
+    right: -5.5rem;
+    z-index: -1;
+    @media (max-width: 1540px) {
+        width: 510px;
+        top: 45rem;
+        right: -15rem;
+    }
+    @media (max-width: 1020px) {
+        top: 35rem;
+        right: -28rem;
+    }
+    @media (max-width: 648px) {
+        top: 85rem;
+        right: 0rem;
+    }
+    @media (max-width: 420px) {
+        top: 95rem;
+        right: 0rem;
+    }
 }
 
 .about__lineChart {
-    top: 883px;
-    left: 0;
+    top: 88.3rem;
+    left: 8rem;
     box-shadow: 0px 30px 40px @midnightExpress;
+    border-radius: 1rem;
+    @media (max-width: 1540px) {
+        width: 61rem;
+        top: 65rem;
+        left: 5rem;
+    }
+    @media (max-width: 1020px) {
+        width: 43rem;
+        top: 65rem;
+        left: 5rem;
+    }
+    @media (max-width: 648px) {
+        display: none;
+    }
 }
 
 .about__pieChart {
-    top: 1072px;
-    left: 730px;
+    top: 107.2rem;
+    left: 65rem;
     box-shadow: 0px 30px 40px @midnightExpress;
+    border-radius: 1rem;
+    @media (max-width: 1540px) {
+        width: 34rem;
+        top: 70rem;
+        left: 55rem;
+    }
+    @media (max-width: 1020px) {
+        width: 21rem;
+        top: 70rem;
+        left: 35rem;
+    }
+    @media (max-width: 648px) {
+        display: none;
+    }
 }

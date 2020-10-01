@@ -1,0 +1,66 @@
+// main: ../style.less
+
+.outdoor__inner {
+    padding-top: 0;
+}
+
+.outdoor__content {
+    @media (max-width: 1020px) {
+        order: -1;
+    }
+}
+
+.outdoor__accordion {
+    background: url("../img/services-outdoor.jpg") top left no-repeat;
+    background-color: @white;
+    background-size: 275px 100%;
+    @media (max-width: 1540px) {
+        background: url("../img/services-outdoor-l.jpg") top left no-repeat;
+        background-size: 209px 100%;
+        background-color: @white;
+    }
+    @media (max-width: 1020px) {
+        background-size: 223px 100%;
+        max-width: 628px;
+    }
+    @media (max-width: 648px) {
+        background: @white;
+    }
+    @media (max-width: 420px) {
+        background: @aliceBlue;
+    }
+}
+
+.outdoor__accordion-title {
+    padding-bottom: 10rem;
+    @media (max-width: 648px) {
+        padding: 3rem 0 8.5rem 3rem;
+    }
+    @media (max-width: 420px) {
+        padding: 2.5rem 2rem 5rem 2rem;
+    }
+}
+
+.outdoor__accordion-desc {
+    background-color: fade(@turquoiseBlue, 10%);
+}
+
+.outdoor__accordion-desc-item {
+    min-height: 641px;
+    @media (max-width: 1540px) {
+        min-height: 496px;
+    }
+    @media (max-width: 1020px) {
+        min-height: 487px;
+    }
+    @media (max-width: 648px) {
+        min-height: 626px;
+    }
+    @media (max-width: 420px) {
+        min-height: 639px;
+    }
+}
+
+.outdoor__accordion-title-item, .outdoor__accordion-desc-title, .outdoor__accordion-desc-text, .outdoor__accordion-desc-price {
+    color: @comet;
+}

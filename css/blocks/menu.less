@@ -1,0 +1,125 @@
+// main: ../style.less
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+    &.active {
+        right: 0;
+    }
+}
+
+.menu__mask {
+    width: 100%;
+    height: 100%;
+}
+.menu__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    max-width: 375px;
+    margin-left: auto;
+    padding: 0 6rem 6rem 6rem;
+    background-color: fade(@scarletGum, 72%);
+    backdrop-filter: blur(15px);
+    @media (max-width: 648px) {
+        padding: 0 3.5rem 5.6rem 3.5rem;
+    }
+    @media (max-width: 420px) {
+        max-width: 21.6rem;
+        padding: 0 2.7rem 6rem 2.7rem;
+    }
+}
+
+.menu__nav {
+    width: 100%;
+    text-align: right;
+    align-self: flex-end;
+    margin-bottom: 16.7rem;
+    & div {
+        border-bottom: 1px solid @white;
+        padding: 5rem 0;
+        @media (max-width: 648px) {
+            padding: 4rem 0;
+        }
+        @media (max-width: 420px) {
+            padding: 3rem 0;
+        }
+    }
+    @media (max-width: 648px) {
+        margin-bottom: 13rem;
+    }
+    @media (max-width: 420px) {
+        margin-bottom: 6.8rem;
+    }
+}
+
+.menu__nav-link {
+    font-family: 'Gilroy Bold';
+    font-size: 2.4rem;
+    line-height: 1;
+    color: @white;
+    @media (max-width: 648px) {
+        font-size: 2.2rem;
+    }
+    @media (max-width: 420px) {
+        font-size: 1.8rem;
+    }
+}
+
+.menu__contacts-inner {
+    width: 100%;
+}
+
+.menu__social-inner {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 2rem;
+    margin-bottom: 5.54rem;
+    @media (max-width: 648px) {
+        margin-bottom: 4.8rem;
+    }
+    @media (max-width: 420px) {
+        margin-bottom: 3.7rem;
+    }
+}
+
+.menu__social-link img {
+    width: 2.644rem;
+}
+
+.menu__email {
+    font-family: 'Gilroy Bold';
+    font-size: 2rem;
+    color: @white;
+    margin-bottom: 3rem;
+    @media (max-width: 648px) {
+        font-size: 1.7rem;
+        margin-bottom: 2.1rem;
+    }
+    @media (max-width: 420px) {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.menu__tel {
+    font-family: 'Gilroy Bold';
+    font-size: 3.6rem;
+    color: @white;
+    @media (max-width: 648px) {
+        font-size: 3rem;
+    }
+    @media (max-width: 420px) {
+        font-size: 2rem;
+    }
+}

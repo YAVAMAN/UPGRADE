@@ -1,0 +1,61 @@
+// main: ../style.less
+
+.print__inner {
+    padding-top: 0;
+    padding-bottom: 8rem;
+}
+
+.print__accordion {
+    background: url("../img/services-print.jpg") top left no-repeat;
+    background-color: @white;
+    background-size: 275px 100%;
+    @media (max-width: 1540px) {
+        background: url("../img/services-print-l.jpg") top left no-repeat;
+        background-color: @white;
+        background-size: 209px 100%;
+    }
+    @media (max-width: 1020px) {
+        background-size: 223px 100%;
+        max-width: 628px;
+    }
+    @media (max-width: 648px) {
+        background: @white;
+    }
+    @media (max-width: 420px) {
+        background: @floralWhite;
+    }
+}
+
+.print__accordion-title {
+    padding-bottom: 10rem;
+    @media (max-width: 648px) {
+        padding: 3rem 0 8.5rem 3rem;
+    }
+    @media (max-width: 420px) {
+        padding: 2.5rem 2rem 5rem 2rem;
+    }
+}
+
+.print__accordion-desc {
+    background-color: fade(@grandis, 10%);
+}
+
+.print__accordion-desc-item {
+    min-height: 545px;
+    @media (max-width: 1540px) {
+        min-height: 401px;
+    }
+    @media (max-width: 1020px) {
+        min-height: 392px;
+    }
+    @media (max-width: 648px) {
+        min-height: 530px;
+    }
+    @media (max-width: 420px) {
+        min-height: 544px;
+    }
+}
+
+.print__accordion-title-item, .print__accordion-desc-title, .print__accordion-desc-text, .print__accordion-desc-price {
+    color: @comet;
+}
